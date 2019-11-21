@@ -1,0 +1,79 @@
+/* Custom page CSS
+        -------------------------------------------------- */
+
+body {
+    padding-top: 75.38px;
+    background: url('../img/banners/img.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Wrapper
+        -------------------------------------------------- */
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Alert
+        -------------------------------------------------- */
+
+.alert {
+    margin-bottom: 0;
+}
+
+/* Footer
+        -------------------------------------------------- */
+
+.footer {
+    background-color: #f5f5f5;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Code
+        -------------------------------------------------- */
+
+code {
+    font-size: 80%;
+}
+
+/* Nav
+        -------------------------------------------------- */
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: inherit;
+}
+
+/* jumbotron
+        -------------------------------------------------- */
+
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.77);
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}

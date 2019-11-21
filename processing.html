@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Guela UI</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="css/bootswatch.min.css"/>
+
+    <!-- Foneawesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"/>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/guela.css"/>
+  </head>
+  <body class="bg-light">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Guela</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">
+                            <i class="fas fa-home"></i> 
+                            Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./processing.html">
+                            <i class="fas fa-toolbox"></i> Processor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Alert Start -->
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <strong>
+        Alert Box
+      </strong>
+      <br />
+      Use this to display alert messages.
+    </div>
+    <!-- Alart End -->
+
+    <!-- Main Start -->
+    <main class="wrapper">
+        <div class="container-fluid pt-3">
+            <div class="row">
+                <div class="col-12">
+                    <form method="post">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">
+                                    <i class="fas fa-upload"></i>
+                                    Upload Csv</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#profile">
+                                    <i class="fas fa-wrench"></i> 
+                                    Configuration</a>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content pt-3">
+                            <div class="tab-pane fade show active" id="home">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputFile">Domestic File</label>
+                                            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                            <small id="fileHelp" class="form-text text-muted">Please select a file.</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputFile">Foreign File</label>
+                                            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                            <small id="fileHelp" class="form-text text-muted">Please select a file.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile">
+                                <fieldset class="form-group">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="" checked="">
+                                        Option one is this and that—be sure to include why it's great
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-sm btn-primary"><i class="fas fa-paper-plane"></i> Process</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="h3">Results</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="table-responsive" style="height: 350px;">
+                        <table class="table table-hover">
+                            <caption>Domestic file name</caption>
+                            <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="table-responsive" style="height: 350px;">
+                        <table class="table table-hover">
+                            <caption>Foreign file name</caption>
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer mt-auto py-3 fixed-bottom">
+        <div class="container-fluid">
+            <span class="text-muted">
+                <p>Developed and maintained with <span style="color: red"><i class="fas fa-heart"></i></span> by <a href="#">Developer Circle</a> Ouagadougou, Burkina Faso</p>
+            </span>
+        </div>
+    </footer>
+    <!-- Footer End -->
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(".alert").alert();
+    </script>
+
+    <!-- CDN -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+</body>
+</html>
